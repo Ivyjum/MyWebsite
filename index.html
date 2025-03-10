@@ -119,11 +119,15 @@
         <h2>Book Our Services</h2>
         <form action="submit.php" method="POST">
             <form class="contact-form" action="https://formspree.io/f/mblgjdng" method="POST"></form>
+            <label for="name">Name:</label>
             <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <label for="email">Email:</label>
+            <input type="email id" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit">Send message</button>
         </form>
+         <p id="responseMessage" class="hidden"></p>
     </section>
 
     <!-- Footer -->
